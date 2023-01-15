@@ -56,7 +56,7 @@ export class ChatGPTBot {
 
   // get trigger keyword in group chat: (@Name <keyword>)
   get chatGroupTriggerKeyword(): string {
-    return `@${this.botName} ${this.chatgptTriggerKeyword || ""}`;
+    return `${this.chatgptTriggerKeyword || ""}`;
   }
 
   // configure API with model API keys and run an initial test
